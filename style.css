@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #c5e4e6; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #bbb; 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 400px;
+    max-height: 500px;
+    padding: 7px;
+    background-color: #c5e4e6;
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+    margin-bottom: 15px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.2rem;
+}
+
+.heading::before{
+    content: '';
+    width: 125px;
+    height: 2px;
+    position: absolute;
+    background-color: black;
+    top: 58px;
+    transform: rotate(-3deg);
+}
+
+#input{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    padding-left: 15px;
+    height: 18px;
+    border-radius: 30px;
+    border: none;
+    font-size: 15px;
+}
+
+#input:focus{
+    outline: none;
+}
+
+.main{
+    margin: 6px;
+    padding: 5px;
+    
+}
+
+.main .not-found{
+    width: 220px;
+    height: 220px;
+    color: #c5e4e6;
+    position: relative;
+    background-color: #c5e4e6;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 20px 0px;
+}
+
+.container .word{
+    font-size: 30px;
+    margin: 4px;
+    padding: 5px 0px;
+    /* color: brown; */
+}
+
+.container .PART-OF-SPEECH{
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 300;
+    color: gray;
+    color: #8c5656;
+    margin: 8px 0px;
+}
+
+.container .meaning{
+    margin: 4px 0px;
+    padding: 2px 0px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.container .example{
+    font-size: 14px;
+    margin: 3px;
+}
+
+.container .example span{
+    font-weight: 300;
+}
+
+.container .synonyms{
+    font-size: 14px;
+    margin: 3px;
+}
+
+.container .synonyms span{
+    font-weight: 300;
+}
+
+.container .antonyms{
+    font-size: 14px;
+    margin: 3px;
+}
+
+.container .antonyms span{
+    font-weight: 300;
+}
+
+.items:not(:last-child):after{
+    /* font-size: 25px; */
+    content: ", ";
+}
+
+#meaning{
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
