@@ -22,7 +22,7 @@ function search(event){
 			if(data.title == 'No Definitions Found'){
 				document.getElementById("main").innerHTML = 'Please check your spelling';
 
-				document.getElementById("main").innerHTML = `<img class="not-found" src="./no-results.png" alt="Not found">`;
+				document.getElementById("main").innerHTML = `<img class="not-found" src="./not_found.png" alt="Not found">`;
 			}
 			else{
 
